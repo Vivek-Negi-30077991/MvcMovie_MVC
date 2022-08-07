@@ -1,0 +1,29 @@
+﻿
+@model IEnumerable<MvcMovie.Models.Employee>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+Employee Id
+            </th>
+            <th>
+                Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <td>
+                @item.Eid
+            </td>
+             <td>
+                 @item.Name
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
